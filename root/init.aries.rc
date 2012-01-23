@@ -212,10 +212,9 @@ service tvouthack /system/bin/tvouthack
     group graphics
     disabled
 
-service run-parts /system/bin/logwrapper /system/xbin/run-parts /system/etc/init.d
+service runpa /system/bin/sysinit
+    class main
     user root
     group root
-    disabled
-    oneshot
-    
+    oneshot    
     
